@@ -4,14 +4,6 @@ import CharacterCard from "./CharacterCard";
 import SearchForm from "./SearchForm";
 import styled from "styled-components";
 
-const Display = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  width: 100%
-  justify-content: space-around;
-  align-content: center;
-`;
-
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
@@ -37,9 +29,7 @@ export default function CharacterList() {
     (
       <section className="character-list">
         {/* <h2>TODO: `array.map()` over your state here!</h2> */}
-        <Display>
-          <SearchForm characters={characters} />
-        </Display>
+        <SearchForm characters={characters} />
       </section>
     )
   );
