@@ -12,12 +12,6 @@ const Display = styled.div`
   align-content: center;
 `;
 
-const Search = styled.div`
-  margin: 0 auto;
-  width: 20vw;
-  // background: grey;
-`;
-
 export default function CharacterList() {
   // TODO: Add useState to track data from useEffect
   const [characters, setCharacters] = useState([]);
@@ -40,14 +34,13 @@ export default function CharacterList() {
 
   return (
     console.log("characters", characters),
-    <section className="character-list">
-      {/* <h2>TODO: `array.map()` over your state here!</h2> */}
-      <Search><SearchForm data={characters} /></Search>
-      <Display>
-        {characters.map(character => {
-          return <CharacterCard key={character.id} character={character} />;
-        })}
-      </Display>
-    </section>
+    (
+      <section className="character-list">
+        {/* <h2>TODO: `array.map()` over your state here!</h2> */}
+        <Display>
+          <SearchForm characters={characters} />
+        </Display>
+      </section>
+    )
   );
 }
