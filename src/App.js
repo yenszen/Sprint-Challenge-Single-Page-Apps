@@ -9,7 +9,7 @@ export default function App() {
   return (
     <main>
       <nav>
-          <Link exact to="/">Home</Link>
+          <Link to="/">Home</Link>
           <Link to="/characters">Character List</Link>
       </nav>
       <Header />
