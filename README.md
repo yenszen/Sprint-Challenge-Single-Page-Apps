@@ -27,7 +27,7 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ]  Explain benefit(s) using `client-side routing`?
 
-> Answer:
+> Answer: Client-side routing will not cause the page to refresh when navigating between different links, as there are just certain parts inside the application that will change. Following this, another benefit would thus be the greater speed with which views are routed due to less data being processed overall compared to server-side routing which will render data that may not be required. Lastly, client-side routing will result in smoother transitions and animations between views, as it is easier to implement compared to its server-side counterpart.
 
 ## Project Set Up
 
